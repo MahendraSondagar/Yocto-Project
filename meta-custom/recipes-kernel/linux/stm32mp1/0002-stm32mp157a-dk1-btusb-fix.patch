@@ -1,0 +1,15 @@
+diff --git a/btusb.c.orig b/btusb.c
+index afd2b1f..ecf0163 100644
+--- a/drivers/bluetooth/btusb.c
++++ b/drivers/bluetooth/btusb.c
+@@ -341,7 +341,9 @@ static const struct usb_device_id blacklist_table[] = {
+ 
+ 	/* Roper Class 1 Bluetooth Dongle (Silicon Wave based) */
+ 	{ USB_DEVICE(0x1310, 0x0001), .driver_info = BTUSB_SWAVE },
+-
++        
++        /* Tp-Link UB500 Device*/
++        { USB_DEVICE(0x2357, 0x0604), .driver_info = BTUSB_REALTEK },
+ 	/* Digianswer devices */
+ 	{ USB_DEVICE(0x08fd, 0x0001), .driver_info = BTUSB_DIGIANSWER },
+ 	{ USB_DEVICE(0x08fd, 0x0002), .driver_info = BTUSB_IGNORE },
