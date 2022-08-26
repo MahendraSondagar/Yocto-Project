@@ -1,8 +1,6 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}: ${THISDIR}/files:"
 SRC_URI += "\
             file://0001-stm32mp157a-dk1-i2c5-added.patch \
-            file://0002-stm32mp157a-dk1-btusb-fix.patch  \
-            file://0003-stm32mp157a-dk1-hci_ldisc-fix.patch \
 "
 
 
